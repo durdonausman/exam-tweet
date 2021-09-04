@@ -1,0 +1,375 @@
+.homes-page {
+  margin-top: 31px;
+  display: flex;
+}
+
+.homes {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homes__menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 130px;
+}
+
+.homes__menu-line {
+  width: 1px;
+  height: 830px;
+  background-color: #d8d8d8;
+  margin-top: 0;
+}
+
+.homes__menu-img {
+  margin-bottom: 31px;
+}
+
+.homes__menu-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.homes__menu-link::before {
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.homes__home::before {
+  width: 26px;
+  height: 24px;
+  background-image: url(../../Images/home.png);
+}
+
+.homes__explore::before {
+  width: 23px;
+  height: 23px;
+  background-image: url(../../Images/reshotka.png);
+}
+
+.homes__notif::before {
+  width: 23px;
+  height: 23px;
+  background-image: url(../../Images/bell.png);
+}
+
+.homes__message::before {
+  width: 23px;
+  height: 21px;
+  background-image: url(../../Images/message.png);
+}
+
+.homes__save::before {
+  width: 20px;
+  height: 23px;
+  background-image: url(../../Images/save-icon.png);
+}
+
+.homes__lists::before {
+  width: 23px;
+  height: 23px;
+  background-image: url(../../Images/list-icon.png);
+}
+
+.homes__profile::before {
+  width: 28px;
+  height: 28px;
+  background-image: url(../../Images/profile-icon.png);
+}
+
+.homes__more::before {
+  width: 25px;
+  height: 25px;
+  background-image: url(../../Images/more-icon.png);
+}
+
+.homes__menu-tweet {
+  width: 170px;
+  text-decoration: none;
+  background-color: #1d9bf0;
+  border-radius: 27px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: white;
+  margin-top: 16px;
+  padding: 10px;
+  margin-left: -20px;
+}
+
+.homes__menu-user {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.homes__menu-user::before {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../Images/user-pic.png);
+}
+
+.homes__menu-user-name {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.homes__menu-user-link {
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.homes__main {
+  width: 630px;
+}
+
+.homes__main-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.homes__main-heading {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.homes__main-line {
+  margin-top: 10px;
+}
+
+.homes__main-tweet {
+  display: flex;
+  padding: 15px;
+}
+
+.homes__main-tweet-wrapper {
+  margin-left: 12px;
+}
+
+.homes__main-tweet-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #828282;
+  margin-top: 20px;
+}
+
+.homes__main-tweet-icons {
+  margin-top: 50px;
+}
+
+.homes__main-tweet-icons-img {
+  margin-right: 23px;
+}
+
+.tweet-link {
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  background: rgba(29, 161, 242, 0.4);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 120px;
+  padding: 10px 15px;
+  text-align: center;
+
+  margin-left: 236px;
+}
+
+.homes__main-post-inner {
+  display: flex;
+  padding: 15px;
+}
+
+.homes__main-post-inner-content {
+  margin-left: 12px;
+}
+
+.homes__main-post-inner-top {
+  display: flex;
+}
+
+.homes__main-post-inner-heading {
+  font-size: 17px;
+  line-height: 25px;
+  margin-right: 5px;
+}
+
+.homes__main-post-inner-text {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 5px;
+}
+
+.homes__main-post-inner-min {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.homes__main-post-inner-comment {
+  width: 546px;
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 5px;
+}
+
+.homes__main-post-inner-icons {
+  display: flex;
+  margin-top: 30px;
+}
+
+.homes__main-post-inner-icons-group {
+  display: flex;
+}
+
+.homes__main-post-inner-icon {
+  margin-left: 80px;
+}
+
+.homes__main-post-number {
+  margin-left: 10px;
+}
+
+.number-color-1 {
+  color: #0cb245;
+}
+
+.number-color-2 {
+  color: #ef1c5c;
+}
+
+.homes__search {
+  padding: 10px;
+}
+
+.homes__search-input {
+  border: none;
+  outline: none;
+  background-color: #eff3f4;
+  border-radius: 31px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #5c6c79;
+  padding: 5px 0px 5px 40px;
+  width: 300px;
+}
+
+.homes__search-trend {
+  width: 300px;
+  background: #f7f9f9;
+  border-radius: 10px;
+  padding: 15px 12px;
+  margin-top: 13px;
+}
+
+.homes__search-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.homes__search-top-heading {
+  font-size: 21px;
+  line-height: 23px;
+}
+
+.homes__search-revolution {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.homes__search-revolution-trending {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(57, 59, 65, 0.6);
+}
+
+.homes__search-revolution-rev {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.homes__search-revolution-img {
+  margin-top: 10px;
+}
+
+.homes__search-revolution-number {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(57, 59, 65, 0.6);
+}
+
+.tweets-number {
+  margin-bottom: 25px;
+}
+
+.homes__search-trend-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1da1f2;
+}
+
+.homes__search-follow {
+  width: 300px;
+  background-color: #f7f9f9;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 15px 12px;
+}
+
+.homes__search-follow-heading {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.homes__search-follow-user {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.homes__search-follow-user-name {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.homes__search-follow-user-nick {
+  font-size: 15px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.homes__search-follow-user-link {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 31px;
+  width: 70px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 5px;
+}
+
+.homes__search-privacy {
+  width: 284px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #536471;
+  margin-top: 25px;
+}

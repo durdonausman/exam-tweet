@@ -1,0 +1,96 @@
+.signup__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__modal-content {
+  padding: 30px;
+}
+
+.signup-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__modal-logo {
+  margin-bottom: 20px;
+}
+
+.signup__modal-heading {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.signup__input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.signup__input-top {
+  width: 100%;
+}
+
+.signup-email {
+  font-size: 16px;
+  line-height: 22px;
+  color: #1da1f2;
+  margin-bottom: 25px;
+}
+
+.signup__date-heading {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.signup__date-text {
+  width: 670px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+.signup__date-inputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-month {
+  width: 312px;
+}
+
+.input-day {
+  width: 159px;
+}
+
+.input-year {
+  width: 159px;
+}
+
+.signup__next-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #1da1f2;
+  border-radius: 76px;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-align: center;
+  padding: 10px;
+}
+
+.signup__next-link {
+  text-decoration: none;
+  color: #ffffff;
+}

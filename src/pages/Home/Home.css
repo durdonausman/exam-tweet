@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.home__main {
+  margin-left: 41px;
+}
+
+.home__heading {
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 68px;
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.home__join {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+
+  border: 1px solid rgba(228, 234, 237, 0.8);
+  border-radius: 42px;
+  width: 370px;
+  padding: 10px 0 10px 70px;
+
+  display: flex;
+  align-items: center;
+}
+
+.home__google-log::before {
+  content: "";
+  display: inline-block;
+  width: 31px;
+  height: 32px;
+  background-image: url(../../Images/google-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 3px;
+}
+
+.home__apple-log::before {
+  content: "";
+  display: inline-block;
+  width: 31px;
+  height: 32px;
+  background-image: url(../../Images/logo-apple.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 6px;
+}
+
+.home__email-log {
+  padding: 16px 0 16px 70px;
+}
+
+.home__cookie {
+  width: 373px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 23px;
+  margin-bottom: 20px;
+}
+
+.home__cookie-link {
+  color: #1da1f2;
+}
+
+.home__login {
+  display: flex;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.home__login-link {
+  text-decoration: none;
+  margin-left: 6px;
+  color: #1da1f2;
+}
+
+.home__nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-top: 22px;
+}
+
+.home__nav-list-item {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.home__nav-list-item:first-child {
+  margin-left: 100px;
+}
+
+.home__nav-list-item:last-child {
+  margin-right: 70px;
+}
