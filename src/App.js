@@ -11,6 +11,7 @@ import Feed from "./pages/Feed/feed";
 // import { Auth } from "./context/Authentification";
 import Private from "./routes/Private";
 import Public from "./routes/Public";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Private path="/" component={Feed} exact />
         <Private path="/signup" component={Home} />
         <Private path="/signupModal" component={SignUp} />
+        <Private path="/profile/:username" component={Profile} />
       </Switch>
     </div>
   );
