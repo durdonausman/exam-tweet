@@ -8,7 +8,7 @@ import { useRef } from "react";
 import useAuth from "../../hooks/useAuth";
 
 function Login() {
-  const [setToken] = useAuth(false);
+  const [setToken] = useAuth(true);
 
   const usernameRef = useRef;
   const passwordRef = useRef;

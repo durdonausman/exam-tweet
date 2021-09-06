@@ -1,6 +1,31 @@
 import "../Feed/feed.css";
 import { useParams } from "react-router-dom";
 import users from "../../assets/data";
+import { Link } from "react-router-dom";
+
+import logo from "../../Images/twitter-logo.png";
+import starIcon from "../../Images/star.png";
+import userPic from "../../Images/user-pic.png";
+import galleryIcon from "../../Images/gallery-icon.png";
+import gifIcon from "../../Images/gif.icon.png";
+import statisticsIcon from "../../Images/statistics-icon.png";
+import smileIcon from "../../Images/smile-icon.png";
+import calendarIcon from "../../Images/calendar-icon.png";
+import userPicInner from "../../Images/user-pic-2.png";
+import commentIcon from "../../Images/comment-icon.png";
+import arrowIcon from "../../Images/arrows-icon.png";
+import likeIcon from "../../Images/like-icon.png";
+import downloadIcon from "../../Images/download-icon.png";
+import statIcon from "../../Images/statistics-icon-2.png";
+import userIconRaj from "../../Images/user-pic-3.png";
+import arrowIconColorful from "../../Images/arrows-icon-green.png";
+import likeIconColorful from "../../Images/like-icon-colorful.png";
+import userPicCreative from "../../Images/user-pic-4.png";
+import foodPic from "../../Images/food.png";
+import settingsIcon from "../../Images/settings-icon.png";
+import moreDotsIcon from "../../Images/more-dots-icon.png";
+import mushtariyImg from "../../Images/mushtariy.png";
+import shuhratbekImg from "../../Images/shuhratbek.png";
 
 function Profile() {
   const { username } = useParams();
@@ -332,7 +357,7 @@ function Profile() {
                 {foundUser.username}
               </h5>
               <p className="homes__search-follow-user-nick">
-                @{foundUser.usernick}
+                @s{foundUser.usernick}
               </p>
             </span>
             <Link className="homes__search-follow-user-link">Follow</Link>

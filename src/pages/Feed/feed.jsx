@@ -25,10 +25,17 @@ import moreDotsIcon from "../../Images/more-dots-icon.png";
 import mushtariyImg from "../../Images/mushtariy.png";
 import shuhratbekImg from "../../Images/shuhratbek.png";
 
-import useAuth from "../../hooks/useAuth";
+import useAuth from "../../hooks/useAuth.jsx";
+
+import users from "../../assets/data";
+import { useParams } from "react-router-dom";
 
 function Feed() {
-  const [token, setToken] = useAuth(true);
+  const { username } = useParams();
+  const foundUser = users.find((user) => user.username === username);
+
+  const [token] = useAuth(true);
+  console.log(token.username);
   const { username } = token;
 
   return (
@@ -59,8 +66,8 @@ function Feed() {
           <Link className="homes__menu-tweet">Tweet</Link>
           <div className="homes__menu-link homes__menu-user">
             <div>
-              <p className="homes__menu-user-name">Bobur</p>
-              <p className="homes__menu-user-link">@bobur_mavlonov</p>
+              <p className="homes__menu-user-name">{foundUser.username}</p>
+              <p className="homes__menu-user-link">@{foundUser.usernick}</p>
             </div>
           </div>
         </div>
@@ -354,16 +361,24 @@ function Feed() {
           <div className="homes__search-follow-user">
             <img src={mushtariyImg} width="40" height="40" alt="" />
             <span className="homes__search-follow-user-text">
-              <h5 className="homes__search-follow-user-name">Mushtariy</h5>
-              <p className="homes__search-follow-user-nick">@Mushtar565266</p>
+              <h5 className="homes__search-follow-user-name">
+                {foundUser.username}
+              </h5>
+              <p className="homes__search-follow-user-nick">
+                @{foundUser.usernick}
+              </p>
             </span>
             <Link className="homes__search-follow-user-link">Follow</Link>
           </div>
           <div className="homes__search-follow-user">
             <img src={shuhratbekImg} width="40" height="40" alt="" />
             <span className="homes__search-follow-user-text">
-              <h5 className="homes__search-follow-user-name">Shuhratbek</h5>
-              <p className="homes__search-follow-user-nick">@mrshukhrat</p>
+              <h5 className="homes__search-follow-user-name">
+                {foundUser.username}
+              </h5>
+              <p className="homes__search-follow-user-nick">
+                @{foundUser.usernick}
+              </p>
             </span>
             <Link className="homes__search-follow-user-link">Follow</Link>
           </div>

@@ -1,17 +1,14 @@
 import "./App.css";
-// import { useContext } from "react";
-import { Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // Pages
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/Signup/Signup";
 import Feed from "./pages/Feed/feed";
-
+import Profile from "./pages/Profile/Profile";
 // Auth
-// import { Auth } from "./context/Authentification";
 import Private from "./routes/Private";
 import Public from "./routes/Public";
-import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
